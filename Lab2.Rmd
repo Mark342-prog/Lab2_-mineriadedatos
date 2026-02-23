@@ -1,6 +1,8 @@
 ---
 title: "Lab2"
-output: html_document
+author: Grupo 9 
+date: February 23, 2026 
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
@@ -9,10 +11,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r Parte1}
 knitr::opts_chunk$set(echo = TRUE)
-movies <- read.csv("movies_2026.csv")
+movies <- read.csv("data/movies_2026.csv")
 
 summary(movies)
-
+library(factoextra)
 library(ggplot2)
 library(dplyr)
 library(tidyr)
@@ -24,35 +26,15 @@ movies_long <- movies %>%
   separate_rows(genres, sep = "\\|")
 movies_longs <- movies_long %>%
   separate_rows(genres, sep = "\\s*\\|\\s*")
-movies_longss <- movies_longs %>%
-  filter(budget != "0")
 
-top10_genres <- movies_longss %>%
-  group_by(genres) %>%
-  summarise(
-    presupuesto_promedio = mean(budget, na.rm = TRUE),
-    n = n()
-  ) %>%
-  arrange(desc(presupuesto_promedio)) %>%
-  slice_head(n = 10)
+set.seed(123)
+sample_movies <- movies_longs[sample(nrow(movies_longs), 5000), ]
 
-top10_genres
-
-ggplot(top10_genres,aes(x = reorder(genres, presupuesto_promedio),y = presupuesto_promedio)) +
-  geom_col() +
-  coord_flip() +
-  labs(
-    title = "Top 10 géneros con mayor presupuesto promedio",
-    x = "Género",
-    y = "Presupuesto promedio"
-  )
-
-
-estructura <- data.frame(
-  Variable = names(movies),
-  Tipo_R = sapply(movies, class)
+fviz_nbclust(
+  scale(na.omit(sample_movies[, sapply(sample_movies, is.numeric)])),
+  kmeans,
+  method = "wss"
 )
-
 ```
 
 # Tipo de Variable
