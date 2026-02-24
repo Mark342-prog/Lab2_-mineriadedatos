@@ -1,0 +1,108 @@
+---
+title: "Lab2_PCA"
+course: "Mineria de datos"
+date: "February 23, 2026"
+author: Grupo 9
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r message=FALSE, warning=FALSE}
+library(psych)
+library(REdaS)
+library(grid)
+library(corrplot)
+library(factoextra)
+```
+
+## Cargar datos
+```{r}
+# datos <- read.csv("Ejemplo.csv")
+movies <- read.csv("data/movies_2026.csv")
+str(movies)
+```
+
+## Exploración básica
+```{r}
+summary(movies)
+```
+
+## Solo Variables numéricas
+```{r}
+datos_num <- movies %>%
+  select(
+    budget,
+    revenue,
+    runtime,
+    popularity,
+    voteAvg,
+    voteCount,
+    genresAmount,
+    productionCoAmount,
+    productionCountriesAmount,
+    actorsAmount,
+    castWomenAmount,
+    castMenAmount
+  )
+datos_num <- na.omit(datos_num)
+```
+
+## Paso 0 - Análisis de viabilidad
+
+### KMO
+
+```{r}
+KMO(datos_num)
+```
+
+### Esfericidad de Bartlett
+
+```{r}
+bart_spher(datos_num)
+```
+
+## Visualización de correlaciones
+
+```{r}
+matriz <- cor(datos_num, use = "pairwise.complete.obs")
+corrplot(matriz,
+         method = "color",
+         type = "upper",
+         addCoef.col = "black",
+         tl.col = "black",
+         tl.srt = 45)
+```
+
+## Paso 1 - Estandarización
+
+```{r}
+datos_std <- scale(datos_num)
+apply(datos_std, 2, mean)
+apply(datos_std, 2, sd)
+```
+
+## Paso 2 - PCA
+
+```{r}
+compPrinc <- prcomp(datos_std)
+summary(compPrinc)
+```
+
+## Scree Plot
+
+```{r}
+fviz_eig(compPrinc)
+```
+
+
+## Visualización de variables
+
+```{r}
+fviz_pca_var(compPrinc,
+             col.var = "cos2",
+             gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"),
+             repel = TRUE)
+```
