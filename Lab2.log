@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.29)  23 FEB 2026 18:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.29)  1 MAR 2026 22:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -317,8 +317,7 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (c:/Users/Emadlg/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count314
-)
-No file Lab2.aux.
+) (./Lab2.aux)
 \openout1 = `Lab2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
@@ -410,40 +409,48 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 113.
 (c:/Users/Emadlg/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 120.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 122.
 (c:/Users/Emadlg/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 121.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 123.
 [1
 
 {c:/Users/Emadlg/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/Users/Emadlg/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}]
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 202.
-[2]
-<Lab2_files/figure-latex/metodo_codo-1.pdf, id=22, 469.755pt x 325.215pt>
-File: Lab2_files/figure-latex/metodo_codo-1.pdf Graphic file (type pdf)
-<use Lab2_files/figure-latex/metodo_codo-1.pdf>
-Package pdftex.def Info: Lab2_files/figure-latex/metodo_codo-1.pdf  used on input line 257.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[3] [4 <./Lab2_files/figure-latex/metodo_codo-1.pdf>]
-<Lab2_files/figure-latex/silhouette-1.pdf, id=41, 469.755pt x 325.215pt>
-File: Lab2_files/figure-latex/silhouette-1.pdf Graphic file (type pdf)
-<use Lab2_files/figure-latex/silhouette-1.pdf>
-Package pdftex.def Info: Lab2_files/figure-latex/silhouette-1.pdf  used on input line 328.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[5]
-<Lab2_files/figure-latex/silhouette-2.pdf, id=47, 469.755pt x 325.215pt>
-File: Lab2_files/figure-latex/silhouette-2.pdf Graphic file (type pdf)
-<use Lab2_files/figure-latex/silhouette-2.pdf>
-Package pdftex.def Info: Lab2_files/figure-latex/silhouette-2.pdf  used on input line 346.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[6 <./Lab2_files/figure-latex/silhouette-1.pdf>]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 377.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 213.
 (c:/Users/Emadlg/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [7{c:/Users/Emadlg/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc} <./Lab2_files/figure-latex/silhouette-2.pdf>]
+) [2{c:/Users/Emadlg/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] [3]
+<Lab2_files/figure-latex/metodo_codo-1.pdf, id=31, 469.755pt x 325.215pt>
+File: Lab2_files/figure-latex/metodo_codo-1.pdf Graphic file (type pdf)
+<use Lab2_files/figure-latex/metodo_codo-1.pdf>
+Package pdftex.def Info: Lab2_files/figure-latex/metodo_codo-1.pdf  used on input line 347.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[4] [5 <./Lab2_files/figure-latex/metodo_codo-1.pdf>]
+<Lab2_files/figure-latex/viz_kmeans-1.pdf, id=49, 469.755pt x 325.215pt>
+File: Lab2_files/figure-latex/viz_kmeans-1.pdf Graphic file (type pdf)
+<use Lab2_files/figure-latex/viz_kmeans-1.pdf>
+Package pdftex.def Info: Lab2_files/figure-latex/viz_kmeans-1.pdf  used on input line 389.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[6 <./Lab2_files/figure-latex/viz_kmeans-1.pdf>]
+<Lab2_files/figure-latex/silhouette-1.pdf, id=63, 469.755pt x 325.215pt>
+File: Lab2_files/figure-latex/silhouette-1.pdf Graphic file (type pdf)
+<use Lab2_files/figure-latex/silhouette-1.pdf>
+Package pdftex.def Info: Lab2_files/figure-latex/silhouette-1.pdf  used on input line 465.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[7]
+<Lab2_files/figure-latex/silhouette-2.pdf, id=70, 469.755pt x 325.215pt>
+File: Lab2_files/figure-latex/silhouette-2.pdf Graphic file (type pdf)
+<use Lab2_files/figure-latex/silhouette-2.pdf>
+Package pdftex.def Info: Lab2_files/figure-latex/silhouette-2.pdf  used on input line 484.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[8 <./Lab2_files/figure-latex/silhouette-1.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 515--518
+
+ []
+
+[9 <./Lab2_files/figure-latex/silhouette-2.pdf>]
 
 ! LaTeX Error: Unicode character 🔵 (U+1F535)
                not set up for use with LaTeX.
@@ -452,18 +459,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.438 \begin{itemize}
+l.588 \begin{itemize}
                      
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
  
 Here is how much of TeX's memory you used:
- 11554 strings out of 469514
- 179426 string characters out of 5467647
- 603962 words of memory out of 5000000
- 40032 multiletter control sequences out of 15000+600000
- 663377 words of font info for 69 fonts, out of 8000000 for 9000
+ 11583 strings out of 469514
+ 180196 string characters out of 5467647
+ 604456 words of memory out of 5000000
+ 40053 multiletter control sequences out of 15000+600000
+ 663059 words of font info for 68 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 89i,6n,93p,347b,631s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,6n,93p,580b,631s stack positions out of 10000i,1000n,20000p,200000b,200000s
 !  ==> Fatal error occurred, no output PDF file produced!
